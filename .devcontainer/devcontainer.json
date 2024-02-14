@@ -1,0 +1,6 @@
+{
+	"name": "simple-react-app",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node",
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	"features": {}
+}
