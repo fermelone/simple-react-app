@@ -8,4 +8,8 @@ tasks:
   - init: npm install && npm run build
     command: npm run start
 
-
+ports:
+  - name: React App
+    description: React app dev preview
+    port: 3000
+    onOpen: open-preview
