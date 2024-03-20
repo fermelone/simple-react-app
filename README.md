@@ -1,3 +1,9 @@
+## Contribute using Gitpod
+
+With a single click, you can start a workspace on this git repository in which the code is fully built and the application is running, so that you can start writing software straight away.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
