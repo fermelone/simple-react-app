@@ -3,6 +3,12 @@
 # and commit this file to your remote git repository to share the goodness with others.
 
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
+# Gitpod workspace YAML config file
+
+# Use our workspace image, or build/bring your own
+#image: gitpod/workspace-full
+image:
+  file: .gitpod.Dockerfile
 
 tasks:
   - init: npm install && npm run build
