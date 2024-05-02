@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM gitpod/workspace-full
 
 USER root
 
@@ -9,7 +9,7 @@ RUN curl https://deb.releases.teleport.dev/teleport-pubkey.asc | sudo apt-key ad
     apt-get update && \
     apt install teleport
 
-ENV TELEPORT_PROXY=https://fernando-gitpod.teleport.sh/
+ENV TELEPORT_PROXY=https://fernando-gitpod.teleport.sh
 
 # Install:
 # - git (and git-lfs), for git operations (to e.g. push your work).
@@ -22,8 +22,5 @@ RUN apt-get update && apt-get install -yq \
     git-lfs \
     sudo \
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/*
-
-# Create the gitpod user. UID must be 33333.
-RUN useradd -l -u 33333 -G sudo -md /home/gitpod -s /bin/bash -p gitpod gitpod
 
 USER gitpod
