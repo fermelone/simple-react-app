@@ -4,5 +4,6 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {},
 	"postCreateCommand": "npm install && npm run build",
-	"postStartCommand": "npm run start"
+	"postStartCommand": "npm run start",
+	"portsAttributes": {"3000": {"label": "Application port"}}
 }
